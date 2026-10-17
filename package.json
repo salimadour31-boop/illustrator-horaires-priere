@@ -1,0 +1,16 @@
+{
+  "name": "illustrator-horaires-priere",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tests Node du script Illustrator HorairesPriere.jsx (le script lui-même n'utilise pas Node).",
+  "license": "MIT",
+  "scripts": {
+    "build": "node build.js",
+    "test": "node build.js && node test/syntax.js && node test/astro.test.js && node test/table.test.js && node test/diag.test.js && node test/dom.test.js",
+    "mutate": "node test/mutate.js"
+  },
+  "devDependencies": {
+    "acorn": "^8.19.0",
+    "adhan": "^4.4.6"
+  }
+}
